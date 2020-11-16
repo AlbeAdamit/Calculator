@@ -10,24 +10,25 @@ body {
     background: linear-gradient(to right, cyan, red);
 }
 
-.container {
+.calculatrice {
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto)repeat(5, 100px);
+    grid-template-rows: minmax(60px, auto)repeat(5, 100px);
 }
 
-.container button {
+.calculatrice > button {
     cursor: pointer;
     font-size: 2rem;
-    border: 1px, solid, gold;
-    background-color: rgba(255, 255, 255, .75);
+    border: 10px, solid, gold;
+    outline: none;
+    background: linear-gradient(to right, darkred, dodgerblue);
 }
 
-.container button:hover {
-    background-color: springgreen;
+.calculatrice > button:hover {
+    background: linear-gradient(to right, darkred, yellow);
 }
 
 .span-two {
@@ -45,11 +46,13 @@ body {
     word-wrap: break-word;
     word-break: break-all;
 }
+
 .output .previous-operand {
     color: royalblue;
     font-size: 1.5rem;
 }
+
 .output .current-operand {
-    color: dodgerblue;
+    color: yellow;
     font-size: 2.5rem;
 }

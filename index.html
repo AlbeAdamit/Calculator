@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>calculator</title>
+    <link rel="stylesheet" href="style.css"><script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
     <script src="calculator.js" defer></script>
 </head>
 <body>
-    <main class="container">
+    <div class="calculatrice">
     <div class="output">
         <div data-previous-operand class="previous-operand"></div>
         <div data-current-operand="" class="current-operand"></div>
     </div>
     <button data-all-clear class="span-two">AC</button>
-    <button data-delete>DEL</button>
+    <button data-delete><i class="fas fa-eraser"></i></button>
     <button data-operation>÷</button>
     <button data-number>1</button>
     <button data-number>2</button>
@@ -31,6 +32,7 @@
     <button data-number>.</button>
     <button data-number>0</button>
     <button data-equals class="span-two" >=</button>
-</main>
+    </div>
+    <script src="calculator.js" defer></script>
 </body>
 </html>
